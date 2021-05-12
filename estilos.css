@@ -1,0 +1,514 @@
+body{
+    background-color: rgb(5,5,5,.6);
+    font-size: 30px;
+    color: rgba(210, 210, 210, 0.863);
+}
+
+.container{
+    height: 90vh;
+    width: 95%;
+    margin: 2rem auto;
+    display: flex;
+    background-color: rgb(5,5,5,.8);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.reloj-container{
+    width: 100%;
+    color: rgba(210,210,210,.6);
+    background-color: rgba(5, 5, 5, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 50px;
+    transition: transform .7s;
+    cursor: pointer;
+    font-size:20px ;
+}
+
+.botonesTempo{
+    width: 60%;
+    height: fit-content;
+    color: rgba(210,210,210,.6);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 50px;
+    transition: transform .7s;
+    cursor: pointer;
+    font-size:20px ;
+
+}
+
+.controladorPantallaIndicador{
+    position: relative;
+    top: -25%;
+}
+.tableroNumerico{
+    margin: 1%;
+    width: 25%;
+    height: 50px;
+    background-color: rgba(5, 5, 5, 0.062);
+    border-radius: 20px;
+    color:rgba(210,210,210,.6);
+    font-size: 20px;
+}
+.tableroNumericoIniciar{
+    margin: 1%;
+    width: 10%;
+    font-style: oblique;
+    height: 70px;
+    border-radius: 100%;
+    background-color: rgba(37, 143, 23, 0.651);
+    color:rgba(210,210,210,.6);
+    font-size: 20px;
+}
+.tableroNumericoBorrar{
+    margin: 1%;
+    width: 10%;
+    height: 70px;
+    background-color: rgba(212, 30, 30, 0.966);
+    border-radius: 20px;
+    color:rgba(210,210,210,.6);
+    font-size: 20px;
+}
+
+.cronometroSpan{
+    font-size:50px;
+    width: fit-content;
+}
+.opciones{
+    width: 100%;
+    height: fit-content;
+    color: rgba(210,210,210,.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 5px;
+    transition: transform .7s;
+    cursor: pointer;
+    font-size:20px ;
+}
+.contenedorop{
+    width: 70%;
+    height: fit-content;
+    color: rgba(210,210,210,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 5px;
+    transition: transform .7s;
+    cursor: pointer;
+    font-size:20px ;
+}
+
+.reloj-container:hover{
+    transform: scale(1.2);
+}
+
+.boton{
+    width: 70%;
+    height: 50px;
+    background-color: rgba(210,210,210,.6);
+    border-radius: 10px;
+}
+.boton:hover{
+    background-color: rgba(210, 210, 210, 0.863);
+}
+.controlCronometro{
+margin-top: 10px;
+width: 30%;
+}
+.botonCronometroParar{
+    margin-top: 10px;
+    width: 50%;
+    font-style: oblique;
+    height: 60px;
+    border-radius: 100px;
+    background-color: rgba(212, 30, 30, 0.966);
+    transition: transform .7s;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: unset;
+    font-style: italic;
+}
+.botonCronometroReiniciar{
+    margin-top: 10px;
+    width: 50%;
+    font-style: oblique;
+    height: 60px;
+    border-radius: 100px;
+    background-color: rgba(63, 111, 243, 0.973);
+    transition: transform .7s;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: unset;
+    font-style: italic;
+}
+
+.MostrarCronometro{
+    width: 250px;
+    height: 250px;
+    margin-top: 5%;
+    border-radius: 100%;
+    background-color: rgba(210,210,210,.6);
+}
+.inicioCronometro{
+    top: 0px;
+    width: 60px;
+    font-style: oblique;
+    height: 60px;
+    border-radius: 100%;
+    background-color: rgba(37, 143, 23, 0.651);
+    font-size: 100%;
+    font-weight: unset;
+    font-style: italic;
+}
+.inicioCronometro:hover{
+    transform: scale(1.3);
+    background-color: rgba(210, 210, 210, 0.863);
+}
+.botonCronometroReiniciar:hover{
+    transform: scale(1.1);
+    background-color: rgba(210, 210, 210, 0.863);
+}
+.botonCronometroParar:hover{
+    transform: scale(1.1);
+    background-color: rgba(210, 210, 210, 0.863);
+}
+@media screen and (max-width: 350px) {
+    .SpanReinicio{
+        font-size: 0%;
+}
+
+}
+
+
+.tablero{
+    width: 70%;
+}
+
+@media screen and (max-width: 567px) {
+    .SpanReinicio{
+        font-size: 0%;
+}
+
+.SpanReinicioPequeño{
+    font-size: 100%;
+}
+}
+@media screen and (min-width: 567px) {
+    .SpanReinicioPequeño{
+        font-size: 0%;
+}
+.SpanReinicio{
+    font-size: 100%;
+}
+}
+
+
+
+@media screen and (max-width: 567px) {
+    .spanParar{
+        font-size: 0%;
+}
+.spanPararPequeño{
+    font-size: 100%;
+}
+}
+@media screen and (min-width: 567px) {
+    .spanPararPequeño{
+        font-size: 0%;
+}
+.spanParar{
+    font-size: 100%;
+}
+}
+.RelojInicio{
+    margin-top: 10%;
+    height:fit-content;
+    width: 80%;
+    background-color: rgba(255, 250, 205, 0.637);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 30%;
+}
+h1{
+    width: 100%;
+    height: fit-content;
+    font-size: 75px;
+}
+h2{
+    width: fit-content;
+    height: fit-content;
+    font-size: 40px;
+    color: #d2d2d299;
+}
+.RelojInicio:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 250, 205, 0.733);
+}
+h3{
+    width: fit-content;
+    height: fit-content;
+    font-size: 60px;
+    color: rgba(43, 92, 167, 0.973);
+}
+@media screen and (max-width: 520px) {
+    h3{
+        width: fit-content;
+        height: fit-content;
+        font-size: 50px;
+        color: rgba(43, 92, 167, 0.973);
+    }
+    }
+
+.inicioFecha{
+    height:fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 10%;
+}
+.inicioFecha:hover{
+    transform: scale(1.3);
+}
+/*label*/
+.TemporizadorEnPantalla{
+    margin-top: 5%;
+    width: 70%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-color: black;
+    background-color: rgba(210, 210, 210, 0.452);
+    border-radius: 30%;
+}
+
+.recordatorio{
+    margin-top: 10px;
+    width: 75%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(210, 210, 210, 0.452);
+    border-color: black;
+    border-radius: 10px;
+}
+.vistasRecordatorio{
+    background-color: rgba(210, 210, 210, 0.452);
+    margin-top: 1%;
+    width: 75%;
+    border-color: black;
+    border-radius: 10px;
+    height: fit-content;
+}
+.tiempoTempo{
+    width: 10%;
+    height: 40px;
+    font-size: 45px;
+    color: rgba(43, 92, 167, 0.973);
+    align-content: center;
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0);
+    border: none;
+}
+.label {
+    margin: 0;
+
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+#hour-label {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+#min-label {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+#sec-label {
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+/*times*/
+.time {
+    justify-self: center;
+    align-self: center;
+
+    border: none;
+    background-color: #ffffff00;
+    font-size: 50px;
+    width: 70px;
+    height: 50px;
+}
+
+#hour {
+    grid-area: 4 / 2 / 2 / 3;
+}
+
+.semicolon {
+    justify-self: center;
+    align-self: center;
+
+    font-size: 30px;
+    margin: 0;
+}
+#p1 {
+    grid-area: 4 / 2 / 2 / 4;
+}
+
+#minute {
+    grid-area: 4 / 3 / 2 / 4;
+}
+
+#p2 {
+    grid-area: 4 / 3 / 2 / 5;
+}
+
+#sec {
+    grid-area: 4 / 4 / 2 / 5;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: rgb(22, 143, 42);
+    border-radius: 10px;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+.btn2 {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: rgb(11, 78, 165);
+    border-radius: 10px;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+#start {
+    grid-area: 4 / 2 / 3 / 4;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 5;
+}
+#el {
+    grid-area: 3 / 3 / 3 / 5;
+    margin-top: -10%;
+}
+#est{
+    grid-area: 4 / 2 / 3 / 4;
+    margin-top: -10%;
+}
+.cuadroRecordatorio{
+    background-color: blue;
+}
+#cuadroRecor{
+    height: 40%;
+    width: 50%;
+    margin-top: 10px;
+    background-color: rgb(5,5,5,.8);
+    color: rgba(210, 210, 210, 0.452);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#label-Titulo{
+    grid-area: 1 / 3 / 3 / 4;
+}
+    
+@media screen and (max-width: 411px) {
+    #cuadroRecor{
+        width: 70%;
+    }
+    #el{
+        width: 40%;
+        font-size: 20px;
+    }
+    #est{
+        width: 40%;
+        font-size: 20px;
+    }
+    #hour{
+        font-size: 35px;
+    }
+    #minute{
+        font-size: 35px;
+    }
+    #sec{
+        font-size: 35px;
+    }
+    #hour-label {
+        font-size: 25px;
+        width: fit-content;
+    }
+    #min-label {
+        font-size: 25px;
+        width: fit-content;
+    }
+    #sec-label {
+        font-size: 25px;
+        width: fit-content;
+    }
+    }
+@media screen and (max-width: 365px) {
+    #cuadroRecor{
+        width: 70%;
+    }
+    #el{
+        width: 40%;
+        font-size: 20px;
+    }
+    #est{
+        width: 40%;
+        font-size: 20px;
+    }
+    #hour{
+        font-size: 30px;
+    }
+    #minute{
+        font-size: 30px;
+    }
+    #sec{
+        font-size: 30px;
+    }
+    #hour-label {
+        font-size: 20px;
+        width: fit-content;
+    }
+    #min-label {
+        font-size: 20px;
+        width: fit-content;
+    }
+    #sec-label {
+        font-size: 20px;
+        width: fit-content;
+    }
+    .vistasRecordatorio{
+        width: 80%;
+    }
+        .recordatorio{
+            width: 80%;
+        }
+    }
